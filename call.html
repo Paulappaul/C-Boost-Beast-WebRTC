@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Call Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h2>Call Page</h2>
+    <div>
+        <label for="callField">Enter Call ID:</label>
+        <input type="text" id="callField" name="callField">
+        <button id="callButton">Call</button>
+        <button id="acceptButton">Accept</button>
+        <button id="hangupButton">Hang Up</button>
+	<button id="logoutButton">Logout</button>
+	<div id="contactList">
+        	<h3>Contact List</h3>
+        	<ul id="contactListItems">
+            <!-- Contact list items will be added here -->
+        	</ul>
+    		</div>
+   </div>
+   <div id="videoContainer">
+        <div>
+            <h3>Caller Webcam</h3>
+            <video id="callerVideo" autoplay></video>
+        </div>
+        <div>
+            <h3>Receiver Webcam</h3>
+            <video id="receiverVideo" autoplay></video>
+        </div>
+    </div>
+    <script src="call.js"></script>
+</body>
+</html>
+
